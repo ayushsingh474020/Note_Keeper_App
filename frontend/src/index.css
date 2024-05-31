@@ -1,0 +1,106 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: "Montserrat", sans-serif;
+}
+body {
+  background: #eee;
+  padding: 0 16px;
+  
+}
+
+.header {
+  background-color: #f5ba13;
+  /* margin: auto -16px; */
+  padding: 16px 32px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+  display:flex;
+  justify-content:space-between ;
+  align-items: center;
+  width: 100%;
+}
+
+.header h1 {
+  color: #fff;
+  font-family: "McLaren", cursive;
+  font-weight: 200;
+  font-size: 1.5em;
+}
+
+footer {
+  position: absolute;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
+  /* margin-top: 100px; */
+
+}
+
+footer p {
+  color: #ccc;
+}
+.note {
+  /* background: #fff; */
+  border-radius: 7px;
+  box-shadow: 0 2px 5px #ccc;
+  padding: 10px;
+  width: 240px;
+  margin: 16px;
+  float: left;
+  text-align: left;
+}
+.note h1 {
+  font-size: 1.1em;
+  margin-bottom: 6px;
+  font-weight: bold;
+  text-decoration: underline;
+}
+.note p {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.App{
+  height: 100%;
+  /* background: #eee; */
+  width: 100%;
+}
+
+/* Add to your Tailwind CSS file or include in your global styles */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .calendar-dark .react-calendar__navigation {
+    background-color: #553c9a; /* custom-purple-1 */
+    color: white;
+  }
+  .calendar-light .react-calendar__navigation {
+    background-color: #f5ba13; /* custom-yellow-2 */
+    color: black;
+  }
+  .calendar-dark .react-calendar__tile--important-date {
+    background-color: #553c9a;
+  }
+  .calendar-light .react-calendar__tile--important-date {
+    background-color: #f5ba13;
+  }
+  .calendar-dark .react-calendar__tile--current-date {
+    background-color: #553c9a;
+  }
+  .calendar-light .react-calendar__tile--current-date {
+    background-color: #f5ba13;
+  }
+}
+
